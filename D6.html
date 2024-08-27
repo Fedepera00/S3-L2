@@ -128,7 +128,7 @@
       const addParagraph = function () {
         const firstDiv = document.querySelector("body > div");
         const newParagraph = document.createElement("p");
-        newParagraph.innerText = "Questo è un nuovo paragrafo aggiunto.";
+        newParagraph.innerText = "Questo è un nuovo paragrafo fatto per svolgere l'esercizio.";
         firstDiv.appendChild(newParagraph);
       };
       addParagraph();
@@ -147,7 +147,11 @@
              Scrivi una funzione che renda verde il background di ogni lista non ordinata
             */
 
-      const paintItGreen = function () {};
+      const paintItGreen = function () {
+        const lists = document.querySelectorAll("ul");
+        lists.forEach((list) => (list.style.backgroundColor = "green"));
+      };
+      paintItGreen();
 
       /* ESERCIZIO 9
              Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
